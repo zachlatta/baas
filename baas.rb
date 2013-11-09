@@ -1,6 +1,10 @@
 require 'json'
 require 'sinatra'
 
+get '/' do
+  send_file File.join(settings.public_folder, 'index.html')
+end
+
 get '/:numbers' do
   n = params[:numbers].split(',').map { |n| n.to_i }
   n.bogosort!
