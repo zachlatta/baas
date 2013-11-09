@@ -1,9 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    json (1.8.0)
     rack (1.5.2)
     rack-protection (1.5.1)
       rack
+    shotgun (0.9)
+      rack (>= 1.0)
     sinatra (1.4.4)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -14,4 +17,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  json
+  shotgun
   sinatra
